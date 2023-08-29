@@ -1,0 +1,42 @@
+### Send POST request with json body
+POST http://localhost:8080/api/quotes
+Content-Type: application/json
+
+{
+  "author": "Franklin D. Roosevelt",
+  "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+  "source": "Speech in Boston, Massachusetts, October 30, 1940"
+}
+### Send POST request with json body
+POST http://localhost:8080/api/quotes
+Content-Type: application/json
+
+{
+  "author": "Winston Churchill",
+  "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+  "source": "Speech in the House of Commons, May 23, 1940"
+}
+
+### Send request GET DATA
+GET http://localhost:8080/api/quotes
+
+### Send request GET ONE DATA
+GET http://localhost:8080/api/quotes/2
+
+### Send request DELETE ONE DATA
+GET http://localhost:8080/api/quotes/2
+
+
+### Send POST request with json body
+PUT http://localhost:8080/api/quotes/3
+Content-Type: application/json
+
+{
+  "author": "Winston Churchill",
+  "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+  "source": "Speech in the House of Commons, May 22, 1940"
+}
+
+### Send request GET ONE RANDOM DATA
+GET http://localhost:8080/api/quotes/random
+

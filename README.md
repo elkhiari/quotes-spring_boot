@@ -7,6 +7,7 @@ Welcome to the Quotes API project! This project is designed to showcase the crea
 - [Description](#description)
 - [Features](#features)
 - [Endpoints](#endpoints)
+- [Database Table](#database-table)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -32,6 +33,17 @@ This project demonstrates the creation of a RESTful API for managing quotes. The
 - **PUT /api/quotes/{id}**: Update an existing quote.
 - **DELETE /api/quotes/{id}**: Delete a quote.
 - **GET /api/quotes/random**: Retrieve a random quote.
+
+## Database Table
+
+The quotes are stored in an SQL table named `quotes`. Here is the conceptual structure of the `quotes` table:
+
+- `id` (Primary Key)
+- `author` (String)
+- `text` (String)
+- `source` (String, optional)
+- `dateCreation` (Date/Time)
+- `dateUpdate` (Date/Time)
 
 ## Getting Started
 
