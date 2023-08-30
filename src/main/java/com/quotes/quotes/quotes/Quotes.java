@@ -24,11 +24,14 @@ public class Quotes {
         this.source = source;
     }
 
+
     public Quotes(String author, String text,
                   String source, Date dateCreation, Date dateUpdate) {
         this.author = author;
         this.text = text;
         this.source = source;
+        this.dateCreation = dateCreation;
+        this.dateUpdate = dateUpdate;
     }
 
     public Quotes() {
@@ -73,6 +76,14 @@ public class Quotes {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public Date getDateCreation() {
+        return dateCreation;
+    }
+
+    public Date getDateUpdate() {
+        return dateUpdate;
     }
 
     @Override

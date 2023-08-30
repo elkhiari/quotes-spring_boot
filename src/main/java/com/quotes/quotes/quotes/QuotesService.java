@@ -71,10 +71,8 @@ public class QuotesService {
 
     public Quotes getRandomQuotes() {
         long count = repository.count();
-        System.out.println(count);
         if (count == 0 ) throw new IllegalArgumentException("No Quotes found in database");
         long number = ThreadLocalRandom.current().nextLong(1,count);
-        System.out.println(number);
         return repository.findById(number).orElseThrow(
                 () -> new IllegalStateException("Internal Server Error")
         );
