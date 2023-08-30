@@ -24,7 +24,7 @@ GET http://localhost:8080/api/quotes
 GET http://localhost:8080/api/quotes/2
 
 ### Send request DELETE ONE DATA
-GET http://localhost:8080/api/quotes/2
+DELETE http://localhost:8080/api/quotes/2
 
 
 ### Send POST request with json body
