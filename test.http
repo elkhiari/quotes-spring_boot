@@ -28,7 +28,7 @@ GET http://localhost:8080/api/quotes/2
 
 
 ### Send POST request with json body
-PUT http://localhost:8080/api/quotes/3
+PUT http://localhost:8080/api/quotes/2
 Content-Type: application/json
 
 {
